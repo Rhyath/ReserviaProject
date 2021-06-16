@@ -1,0 +1,13 @@
+/* Reservia Project Styling */
+
+    /* css reset maybe in use once everything in place 
+   * { width: 80%;
+    margin: 1.4em auto;
+    padding: 0; 
+   } */
+
+body {
+    font-family: "Raleway", verdana, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
