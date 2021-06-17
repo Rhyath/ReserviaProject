@@ -5,21 +5,25 @@
 
         <link rel="stylesheet" type="text/css" href="ReserviaStyle.css">
 
-        <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
 
         <script src="https://kit.fontawesome.com/1f66a0a1d5.js" crossorigin="anonymous"></script>
+
+        <meta name="Reservia vacation planner" content="Reservia is a vacation planning tool to search for accommodation and activities in any city">
+
     </head>
 
     <body>
-        <navigation>
+        <nav>
             <img src="images/logo/Reservia@3x.png" alt="Reservia logo in blue" title="Reservia Logo">
             <ul>
-                <li>Accommodations</li>
-                <li>Activities</li>
-                <li>Sign Up</li>
+                <li><a href="#">Accommodations</a></li>
+                <li><a href="#">Activities</a></li>
+                <li><a href="#">Sign Up</a></li>
             </ul>
-        </navigation>
+        </nav>
 
         <header>
 
@@ -29,9 +33,10 @@
 
             <div id="searchfield">
 
-                <i class="fas fa-map-marker-alt"></i>
+                <i class="fas fa-map-marker-alt" id="mapicon">
+                </i>
                 <input type="text" placeholder="Marseille, France">
-                <input type="submit" value="Search">
+                <input type="search" value="Search">
 
             </div>
             <!-- end of #searchfield-->

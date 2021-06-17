@@ -7,7 +7,181 @@
    } */
 
 body {
-    font-family: "Raleway", verdana, sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 14px;
     font-weight: normal;
 }
+
+nav {
+    display: flex;
+    flex-flow: row no-wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 1em auto 2em;
+    padding: 0 0.3em;
+    width: auto;
+    height: 3.5rem;
+    border: dashed 2px green;
+}
+
+img {
+    width: 6.9rem;
+    height: 3.2rem;
+    background-color: (0,102,252,0);
+}
+
+li {
+    display: inline;
+    list-style: none;
+    margin: 0 0 0 3rem;
+    border: dotted 2px magenta;
+    font-size: 1em;
+    color: #0065fc;
+}
+
+a:link {
+    text-decoration: none;
+    color: #0065fc;
+    /* cursor: pointer; --maybe not really needed! */
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #0065fc;
+    font-style: oblique;
+}
+
+a:active {
+    color: #0065fc;
+    font-style: oblique;
+}
+
+header {
+    border: dashed 0.2em orange;
+    padding: 0.3em;
+}
+
+header h3 {
+    margin: 0;
+}
+
+header p {
+    margin: 0.5em auto;
+}
+
+/* SEARCHIFIELD - TAKE 1 ................
+#searchfield {
+    margin: 1.3em 0;
+    width: 19rem;
+    height: 3rem;
+    box-sizing:border-box;
+    border: solid 0.1em lightgrey;
+    border-radius: 1.2em;
+}
+
+#mapicon {
+    padding: 1.15em 1.2em;
+    background-color: #F2F2F2;
+    border-top-left-radius: 1.2em;
+    border-bottom-left-radius: 1.2em;
+}
+
+#textfield {
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    padding: 1.15em 2em;
+}
+
+#searchbutton {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    background-color: #0065fc;
+    padding: 1.15em 2em;
+    border-top-right-radius: 1.2em;
+    border-bottom-right-radius: 1.2em;
+} 
+
+*/
+
+#searchfield {
+    display: flex;
+    flex-flow: row no-wrap;
+    margin: 1.3em 0;
+    width: 20em;
+    height: 3em;
+    box-sizing:border-box;
+    border: solid 0.1em #F2F2F2;
+    border-top-left-radius: 1.2em;
+    border-bottom-left-radius: 1.2em;
+}
+
+#mapicon {
+    padding: 1.15em 1.2em;
+    border-top-left-radius: 1.2em;
+    border-bottom-left-radius: 1.2em;
+    background-color: #F2F2F2;
+}
+ input {
+    border: none;
+    font-weight: 700;
+    font-size: 1em;
+ }
+
+input[type="search"] {
+    border-top-right-radius: 1.2em;
+    border-bottom-right-radius: 1.2em;
+    background-color: #0065fc;
+    color: white;    
+ }
+
+ #filters {
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+    padding: 0.5em;
+    border: dotted 2px brown;
+ }
+
+ h4 {
+    display: inline;
+ }
+
+ span.button {
+    margin: 1.3em;
+    padding: 0.3em 1em 0.3em 0;
+    width: 11em;
+    height: 3em;
+    border: solid 0.12em lightgrey;
+    box-sizing: border-box;
+    border-radius: 2em;
+    font-weight: 700;
+    text-align: right;
+ }
+
+span i {
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0;
+    padding: 0.2em;
+    border-radius: 100%;
+    text-align: center;
+    background-color: #deebff; 
+    color: #0065fc;
+ }
+
+ p i {
+    width: 1em;
+    height: 1em;
+    margin-left: 0.3em;
+    margin-right: 1em;
+    padding: 0.2em;
+    border: solid 0.12em lightgrey;
+    border-radius: 100%;
+    text-align: center;
+    color: #0065fc;
+ }
