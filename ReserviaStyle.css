@@ -1,12 +1,8 @@
 /* Reservia Project Styling */
 
-    /* css reset maybe in use once everything in place 
-   * { width: 80%;
-    margin: 1.4em auto;
-    padding: 0; 
-   } */
-
 body {
+    width: 68.5rem;
+    margin: 0 auto;
     font-family: "Raleway", sans-serif;
     font-size: 14px;
     font-weight: normal;
@@ -27,7 +23,6 @@ nav {
     padding: 0 0.3em;
     width: auto;
     height: 3.5rem;
-    border: dashed 2px green;
 }
 
 img {
@@ -40,7 +35,6 @@ li {
     display: inline;
     list-style: none;
     margin: 0 0 0 3rem;
-    border: dotted 2px magenta;
     font-size: 1em;
     color: black;
 }
@@ -68,7 +62,6 @@ a.signup:hover, a.signup:active {
 /* --- HEADER SECTION --- */
 
 header {
-    border: dashed 0.2em orange;
     padding: 0.3em;
 }
 
@@ -130,7 +123,6 @@ input[type="search"] {
     margin-top: 1.5em;
     margin-bottom: 3em;
     padding: 0.5em;
-    border: dotted 2px brown;
  }
 
  h4 {
@@ -139,7 +131,7 @@ input[type="search"] {
 
  span.button {
     margin: 1.3em;
-    padding: 0.3rem 1rem 0.3rem 0;
+    padding: 0.3rem 0.5rem;
     width: 11rem;
     height: 3rem;
     border: solid 0.12rem lightgrey;
@@ -148,21 +140,29 @@ input[type="search"] {
     font-weight: 700;
     display:flexbox;
     flex-flow: row nowrap;
-    justify-items: center;
-    align-items:center;
+    justify-items: space-between;
+    align-items: center;
  }
 
-span i {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin: 0;
-    padding: 0.2rem;
-    border-radius: 100%;
-    line-height: 1.5rem;
-    background-color: #deebff; 
+span.button i {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1em;
+    padding: 0.5em;
+    border-radius: 14em;
+    background-color: #deebff;
+    text-align: center;
+    line-height: 1rem;
     color: #0065fc;
     position: relative;
-    top: -5px;
+    left: -0.6em;
+ }
+
+ span.button:hover {
+     width: 100%;
+     border-radius: 2rem;
+     background-color: #deebff;
+     transition: width 3s linear;
  }
 
 /* --- INFO TEXT --- */
@@ -188,7 +188,6 @@ p i {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    border: dotted 2px blueviolet;
 }
 
     main {
@@ -204,7 +203,6 @@ p i {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
-        border: dashed 1px teal;
     }
 
     .hotelcontainer {
@@ -226,7 +224,6 @@ p i {
         margin-bottom: 0.8em;
         border-top-left-radius: 1em;
         border-top-right-radius: 1em;
-        border: solid 1px deeppink;
     }
 
     .hotelcontainer h4, .hotelcontainer p, .hotelcontainer i {
@@ -332,7 +329,6 @@ aside {
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-between;
-        border: dashed 1px teal;
     }
 
     .popcontainer {
@@ -354,7 +350,6 @@ aside {
         grid-row: 1/-1;
         border-top-left-radius: 1em;
         border-bottom-left-radius: 1em;
-        border: solid 1px deeppink;
     }
 
     .popcontainer h4, .popcontainer p {
@@ -386,7 +381,6 @@ section#activ {
     width: auto;
     height: 30rem;
     margin: 0.5em 0;
-    border: dotted 2px blueviolet;
 }
 
     .activwrapper {
@@ -396,7 +390,6 @@ section#activ {
         grid-template-rows: repeat (5,1fr);
         grid-gap: 2em;
         border-radius: 1em;
-        border: dotted 1px goldenrod;
     }
 
         #grid1 {
@@ -441,7 +434,6 @@ section#activ {
         height: 90%;
         border-top-left-radius: 1em;
         border-top-right-radius: 1em;
-        border: solid 1px deeppink;
     }
 
     .imagebox h4 {
@@ -490,6 +482,6 @@ footer {
 }
 
 .infowrap {
-    margin: 2em 10em 1em 2em;
-    padding: 0.5em 10em 0 0.5em;
+    margin: 3em 4em 0.5em;
+    width: 50rem;
 }
