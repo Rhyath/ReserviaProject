@@ -439,9 +439,9 @@ section#activ {
 
     .imagebox div {
         height: 90%;
-        background-color:blanchedalmond;
         border-top-left-radius: 1em;
         border-top-right-radius: 1em;
+        border: solid 1px deeppink;
     }
 
     .imagebox h4 {
@@ -477,4 +477,19 @@ section#activ {
         #longchamp {
             background: url('/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg') center center no-repeat;
             background-size: cover;
-        }
+        } 
+
+/* FOOTER SETION */
+
+footer {
+    width: 100%;
+    background-color: #f2f2f2;
+    display: flex; 
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.infowrap {
+    margin: 2em 10em 1em 2em;
+    padding: 0.5em 10em 0 0.5em;
+}
