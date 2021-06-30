@@ -1,13 +1,532 @@
 /* Reservia Project Styling */
 
-    /* css reset maybe in use once everything in place 
-   * { width: 80%;
-    margin: 1.4em auto;
-    padding: 0; 
-   } */
-
 body {
-    font-family: "Raleway", verdana, sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+h4 {
+    font-family: "Raleway-Black", sans-serif;
+}
+
+/* --- PAGE TOP SECTION --- */
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 1em auto 2em;
+    padding: 0 0.3em;
+    width: auto;
+    height: 3.5rem;
+}
+
+img {
+    width: 6.9rem;
+    height: 3.2rem;
+    background-color: (0,102,252,0);
+}
+
+li {
+    display: inline;
+    list-style: none;
+    margin: 0 0 0 3rem;
+    font-size: 1em;
+    color: black;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+    /* cursor: pointer; --maybe not really needed! */
+}
+
+a:hover, a:active {
+    color: #0065fc;
+    text-decoration:overline;
+    font-style: italic;
+}
+
+a.signup {
+    color: #0065fc;
+    font-weight: bolder;
+    text-decoration: overline;
+}
+
+a.signup:hover, a.signup:active {
+    font-style: italic;
+}
+
+/* --- HEADER SECTION --- */
+
+header {
+    padding: 0.3em;
+}
+
+header h3 {
+    margin: 0;
+}
+
+header p {
+    margin: 0.5em auto;
+}
+
+/* --- SEARCH BUTTON --- */
+
+#searchfield {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:stretch;
+    margin: 1.3rem 0;
+    width: 20rem;
+    height: 3rem;
+}
+
+#mapicon {
+    width: 3.3rem;
+    height: 3rem;
+    border-top-left-radius: 1.2rem;
+    border-bottom-left-radius: 1.2rem;
+    text-align: center;
+    line-height: 3rem;
+    background-color: #F2F2F2;
+}
+ input {
+    width: 10rem;
+    padding: 0 0.8rem;
+    border: solid 0.1rem #F2F2F2;
+    border-right:none;
+    font-weight: 700;
+    font-size: 1rem;
+ }
+
+input[type="search"] {
+    border-top-right-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+    width: 6.8rem;
+    height: 3rem;
+    padding: 1.15rem 0.rem;
+    text-align: center;
+    background-color: #0065fc;
+    color: white;    
+ }
+
+ input[type="search"]::-webkit-search-cancel-button {
+     -webkit-appearence: none;
+ }
+
+/* --- FILTERS SECTION --- */
+
+ #filters {
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+    padding: 0.5em;
+ }
+
+ h4 {
+    display: inline;
+ }
+
+ span.button {
+    margin: 1.3em;
+    padding: 0.3rem 0.5rem;
+    width: 11rem;
+    height: 3rem;
+    border: solid 0.12rem lightgrey;
+    border-left-style: none;
+    border-radius: 2rem;
+    font-weight: 700;
+    display:flexbox;
+    flex-flow: row nowrap;
+    justify-items: space-between;
+    align-items: center;
+ }
+
+span.button i {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1em;
+    padding: 0.5em;
+    border-radius: 14em;
+    background-color: #deebff;
+    text-align: center;
+    line-height: 1rem;
+    color: #0065fc;
+    position: relative;
+    left: -0.6em;
+ }
+
+ span.button:hover {
+     width: 100%;
+     border-radius: 2rem;
+     background-color: #deebff;
+     transition: width 3s linear;
+ }
+
+/* --- INFO TEXT --- */
+
+p i {
+    width: 1em;
+    height: 1em;
+    margin-left: 0.3em;
+    margin-right: 1em;
+    padding: 0.2em;
+    border: solid 0.12em lightgrey;
+    border-radius: 100%;
+    text-align: center;
+    color: #0065fc;
+ }
+
+ /* --- ACCOMMODATION SECTION --- */
+
+section#accomm {
+    width: auto;
+    height: 80%;
+    margin: 1em 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+main {
+    width: 62%;
+    padding: 1em 2em;
+    background-color: #f2f2f2;
+    box-sizing: content-box;
+    border-radius: 1em;
+} 
+
+#accomm h3 {
+    margin: 0;
+}
+
+.mainwrapper {
+    height: 85%;
+    margin-top: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.hotelcontainer {
+    height: 35%;
+    width: 30%;
+    padding: 0.3em;
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: 1px 3px 15px 5px lightgrey;
+}
+
+.image {
+    width: 100%;
+    height: 55%;
+    margin-bottom: 0.8em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.hotelcontainer h4, .hotelcontainer p {
+    padding: 0;
+    padding-left: 1em;
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+.hotelcontainer p {
+    font-size: smaller;
+}
+
+/* STAR RATING FOR ALL ACCOMMODATION SECTION */
+
+.star-rating {
+    margin-left: 1em;
+    unicode-bidi:bidi-override;
+    color: lightgray;
+    font-size: 0.8em;
+    height: 1em;
+    width: 5em;
+    position: relative;
+}
+
+.star-rating::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f005\f005\f005\f005\f005";
+}
+
+.star-rating::after {
+    color: #0065fc;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f005\f005\f005\f005\f005";
+    position: absolute;
+    z-index: 1;
+    display: block;
+    left: 0;
+    top: 0;
+    width: attr(rating);
+    overflow: hidden;
+}
+
+[title=".600"]::after {
+    width: 67%;
+}
+
+[title=".800"]::after {
+    width: 90%;
+}
+
+[title=".1000]"]::after {
+    width: 100%;
+}
+
+/* HOTEL IMAGES */
+
+#cannebiere {
+    background: url('/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+}
+        
+#duPort {
+    background: url('/images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#mouettes {
+    background: url('/images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg') center center no-repeat;
+    background-size: cover; 
+}
+
+#deLaMer {
+    background: url('/images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg') center center no-repeat;
+    background-size: cover; 
+}
+
+#laPanier {
+    background: url('/images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg') center center no-repeat;
+    background-size: cover; 
+}
+
+#chezAmina {
+    background: url('/images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg') center center no-repeat;
+    background-size: cover; 
+}
+
+
+/* END OF MAIN ACCOMMODATION BIT */
+
+aside {
+    width: 25%;
+    padding: 2em;
+    background-color: #f2f2f2;
+    box-sizing: content-box;
+    border-radius: 1em;
+}
+
+aside h3, aside i { 
+    display: inline;
+}
+
+#chart {
+    float: right;
+    font-size: 1.5em;
+    color: black;
+}
+
+.clearfix {
+    clear: right;
+}
+
+aside i {
+    color: #0065fc;
+}
+
+.popcontainer i i {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0.05em;
+    color: lightgray;
+}
+
+.asidewrapper {
+    height: 90%;
+    margin: 1.5em 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.popcontainer {
+    height: 26%;
+    width: 95%;
+    padding: 0.3em;
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: 1px 3px 15px 5px lightgrey;
+}
+
+.popimage {
+    margin: 0;
+    padding: 0;
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+.popcontainer h4, .popcontainer p {
+    margin: 1em 0 0 1em;
+}
+
+.popcontainer .star-rating {
+    margin-top: 1.3em;
+}
+
+/* ASIDE HOTEL IMAGES */
+
+#morningSun {
+    background: url('/images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#coeurDeLeau {
+    background: url('/images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#bleuBlanc {
+    background: url('/images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+/* ACTIVITIES SECTION  */
+
+section#activ {
+    width: auto;
+    height: 60%;
+    margin: 0.5em 0;
+}
+
+.activwrapper {
+    height: 82%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat (5,1fr);
+    grid-gap: 2em;
+    border-radius: 1em;
+}
+
+#grid1 {
+    grid-column: 1/2;
+    grid-row: 1/6;
+}
+
+#grid2 {
+    grid-column: 2/3;
+    grid-row: 1/4;
+}
+
+#grid3 {
+    grid-column: 2/3;
+    grid-row: 4/6;
+}
+
+#grid4 {
+    grid-column: 3/4;
+    grid-row: 1/6;
+}
+
+#grid5 {
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+#grid6 {
+    grid-column: 4/5;
+    grid-row: 3/6;
+}
+
+.imagebox {
+    border-radius: 1em;
+    box-shadow: 1px 3px 15px 5px #f2f2f2;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imagebox div {
+    height: 90%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.imagebox h4 {
+    padding: 1em;
+    margin: 0;
+}
+
+#oldport {
+    background: url('/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#pomegues {
+    background: url('/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#frioul {
+    background: url('/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#calanques {
+    background: url('/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#garde {
+    background: url('/images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#longchamp {
+    background: url('/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+} 
+
+/* FOOTER SETION */
+
+footer {
+    width: 100%;
+    background-color: #f2f2f2;
+    display: flex; 
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.infowrap {
+    margin: 3em 4em 0.5em;
+    width: 70%;
+}
+
+/* MEDIA QUERIES */ 
+
+@media (min-width=900px) {
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Raleway", sans-serif;
     font-size: 14px;
     font-weight: normal;
 }
