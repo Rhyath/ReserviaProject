@@ -8,3 +8,6 @@ A different layout for mobile and desktop/laptop devices is expected. Tablet dev
 
 There are 2 files on this repository - the .html with the page’s content and the .css with the styling details.
 
+VERSION2 BRANCH 
+working on responsive layout here
+
