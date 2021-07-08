@@ -25,7 +25,7 @@ nav {
 img {
     width: 6.9rem;
     height: 3.2rem;
-    background-color: (0,102,252,0);
+    background-color: rgba(0,102,252,0);
 }
 
 li {
@@ -118,7 +118,7 @@ input[type="search"] {
     border-bottom-right-radius: 1.2rem;
     width: 6.8rem;
     height: 3rem;
-    padding: 1.15rem 0.rem;
+    padding: 1.15rem;
     text-align: center;
     background-color: #0065fc;
     color: white;    
@@ -162,7 +162,7 @@ input[type="search"] {
     font-weight: 700;
     display: flexbox;
     flex-flow: row wrap;
-    justify-items: space-between;
+    justify-content: space-between;
     align-items: center;
  }
 
@@ -538,7 +538,7 @@ footer {
         font-weight: 700;
         display: flexbox;
         flex-flow: row nowrap;
-        justify-items: space-between;
+        justify-content: space-between;
         align-items: center;
      }
     
@@ -546,7 +546,7 @@ footer {
     
     section#accomm {
         width: auto;
-        height: 80%;
+        height: 40em;
         margin: 1em 0;
         display: flex;
         flex-flow: row nowrap;
@@ -606,14 +606,14 @@ footer {
     
     section#activ {
         width: auto;
-        height: 60%;
+        height: 30em;
     }
     
     .activwrapper {
         height: 82%;
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat (5,1fr);
+        grid-template-rows: repeat(5,1fr);
         grid-gap: 2em;
     }
     
