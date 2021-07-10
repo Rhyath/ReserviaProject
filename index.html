@@ -1,22 +1,13 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
-
         <title>Reservia Accommodation Finder</title>
-
         <link rel="stylesheet" type="text/css" href="ReserviaStyle.css">
-
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
-
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-
         <script src="https://kit.fontawesome.com/1f66a0a1d5.js" crossorigin="anonymous"></script>
-
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <meta name="Reservia vacation planner" content="Reservia is a vacation planning tool to search for accommodation and activities in any city">
-
     </head>
 
     <body>
@@ -30,23 +21,16 @@
         </nav>
 
         <header>
-
             <h3>Find a place for your dream vacation</h3>
-
             <p>Downtown or in nature</p>
-
             <div id="searchfield">
-
                 <i class="fas fa-map-marker-alt" id="mapicon">
                 </i>
                 <input type="text" placeholder="Marseille, France">
-                <input type="search" value="Search">
-
+                <button><span class="searchtext">Search</span><i class="fas fa-search"></i></button>
             </div>
             <!-- end of #searchfield-->
-
             <div id="filters">
-
                 <h4>Filters</h4>
                 <span class="button">
                     <i class="fas fa-money-bill-wave"></i> 
@@ -61,167 +45,130 @@
                 <span class="button">
                     <i class="fas fa-dog"></i> Pets allowed     
                 </span>
-
             </div>
             <!-- end of #filters-->
-
             <p> <i class="fas fa-info"></i> More than 500 accommodations are available in this city</p>
-
         </header>
 
         <section id="accomm">
             <main>
-                
                 <h3>Accommodations in Marseille</h3>
-
                 <div class="mainwrapper">
-
                     <div class="hotelcontainer">
                         <span class="image" id="cannebiere"></span>
                         <h4>Auberge la Cannebière</h4>
                         <p>Night starting at <strong>25€</strong></p>
                         <div class="star-rating" title=".800"></div>
                     </div>
-
                     <div class="hotelcontainer">
                         <span class="image" id="duPort"></span>
                         <h4>Hôtel du port</h4>
                         <p>Night starting at <strong>52€</strong></p>
                         <div class="star-rating" title=".1000"></div>
                     </div>
-
                     <div class="hotelcontainer">
                         <span class="image" id="mouettes"></span>
                         <h4>Les mouettes Hotel</h4>
                         <p>Night starting at <strong>76€</strong></p>
                         <div class="star-rating" title=".800"></div>
                     </div>
-
                     <div class="hotelcontainer">
                         <span class="image" id="deLaMer"></span>
                         <h4>Hôtel de la mer</h4>
                         <p>Night starting at <strong>46€</strong></p>
                         <div class="star-rating" title=".600"></div>
                     </div>
-
                     <div class="hotelcontainer">
                         <span class="image" id="laPanier"></span>
                         <h4>Auberge Le Panier</h4>
                         <p>Night starting at <strong>23€</strong></p>
                         <div class="star-rating" title=".800"></div>
                     </div>
-
                     <div class="hotelcontainer">
                         <span class="image" id="chezAmina"></span>
                         <h4>Hôtel chez Amina</h4>
                         <p>Night starting at <strong>96€</strong></p>
                         <div class="star-rating" title=".1000"></div> 
                     </div>
-
                 </div> 
                 <!-- end of .mainwrapper -->
-                
                 <h3>Show more</h3> 
-
             </main>
 
             <aside>
-
                 <h3>Most Popular</h3>
                 <i class="fas fa-chart-line clearfix" id="chart"></i>
-                
                 <div class="asidewrapper">
-
                     <div class="popcontainer">
                         <span class="popimage" id="morningSun"></span>
                         <h4>Morning Sun Hotel</h4>
                         <p>Night starting at <strong>128€</strong></p>
                         <div class="star-rating" title=".100"></div>
                     </div>
-
                     <div class="popcontainer">
                         <span class="popimage" id="coeurDeLeau"></span>
                         <h4>Au cœur de l'eau Bed and Breakfast</h4>
                         <p>Night starting at <strong>71€</strong></p>
                         <div class="star-rating" title=".800"></div>
                     </div>
-
                     <div class="popcontainer">
                         <span class="popimage" id="bleuBlanc"></span>
                         <h4>Tout bleu et Blanc Hotel</h4>
                         <p>Night starting at <strong>68€</strong></p>
                         <div class="star-rating" title=".800"></div>
                     </div>
-
                 </div>
                 <!-- end of .asidewrapper-->
-
             </aside>
-        
         </section> <!--  end of accommodation-->
         
         <section id="activ">
-
             <h3>Activities in Marseille</h3>
-
             <div class="activwrapper">
-                 
                 <div class="imagebox" id="grid1">
                     <div id="oldport"></div>
                     <h4>Old Port</h4>
                 </div>
-
                 <div class="imagebox" id="grid2">
                     <div id="pomegues"></div>
                     <h4>Pomègues Fort</h4>
                 </div>
-
                 <div class="imagebox" id="grid3">
                     <div id="frioul"></div>
                     <h4>Frioul Island</h4>
                 </div>
-
                 <div class="imagebox" id="grid4">
                     <div id="calanques"></div>
                     <h4>Calanques National Park</h4>
                 </div>
-
                 <div class="imagebox" id="grid5">
                     <div id="garde"></div>
                     <h4>Notre-Dame-de-la-Garde</h4>
                 </div>
-
                 <div class="imagebox" id="grid6">
                     <div id="longchamp"></div>
                     <h4>Longchamp Park</h4>
                 </div> 
-
             </div>
-
         </section> <!-- end of activities-->
 
         <footer>
-            
             <div class="infowrap">
                 <h4>About</h4>
                 <p><a href="#">Site Map</a></p>
                 <p><a href="#">General Terms and Conditions</a></p>
                 <p><a href="#">Data and Privacy</a></p>
             </div>
-
             <div class="infowrap">
                 <h4>Our Accommodations</h4>
                 <p><a href="#">Quality Assessment</a></p>
                 <p><a href="#">You have a hotel?</a></p>
             </div>
-
             <div class="infowrap">
                 <h4>Assistance</h4>
                 <p><a href="#">Help Desk</a></p>
                 <p><a href="#">Contact Us</a></p>
             </div>
-
         </footer>
-
     </body>
 </html>
