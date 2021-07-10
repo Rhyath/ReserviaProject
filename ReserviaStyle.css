@@ -1,13 +1,690 @@
 /* Reservia Project Styling */
 
-    /* css reset maybe in use once everything in place 
-   * { width: 80%;
-    margin: 1.4em auto;
-    padding: 0; 
-   } */
-
 body {
-    font-family: "Raleway", verdana, sans-serif;
+    min-width: 450px;
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Raleway", sans-serif;
     font-size: 14px;
     font-weight: normal;
+}
+
+h4 {
+    font-family: "Raleway-Black", sans-serif;
+}
+
+/* --- PAGE TOP SECTION --- */
+
+nav {
+    margin: 2em auto;
+    padding: 0 0.3em;
+    width: auto;
+    height: auto;
+}
+
+img {
+    width: 6.9rem;
+    height: 3.2rem;
+    background-color: rgba(0,102,252,0);
+}
+
+li {
+    display: inline;
+    list-style: none;
+    font-size: 1em;
+    color: black;
+}
+
+.signup {
+    position: absolute;
+    top: 3.5em;
+    font-weight: bolder;
+}
+
+.navitem {
+    padding: 0 1em 0.5em;
+    border-bottom: solid 0.25em #f2f2f2;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+    /* cursor: pointer; --maybe not really needed! */
+}
+
+a:hover, a:active {
+    color: #0065fc;
+    text-decoration:overline;
+    font-style: italic;
+    border-bottom: solid 0.25em #0065fc;
+}
+
+a.signup {
+    color: #0065fc;
+    font-weight: bolder;
+    text-decoration: overline;
+    border: none;
+}
+
+a.signup:hover, a.signup:active {
+    font-style: italic;
+}
+
+/* --- HEADER SECTION --- */
+
+header {
+    padding: 0.3em;
+}
+
+header h3 {
+    margin: 0;
+}
+
+header p {
+    margin: 0.5em auto;
+}
+
+/* --- SEARCH BUTTON --- */
+
+#searchfield {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:stretch;
+    margin: 1.3rem 0;
+    width: 20rem;
+    height: 3rem;
+}
+
+#mapicon {
+    width: 3.3rem;
+    height: 3rem;
+    border-top-left-radius: 1.2rem;
+    border-bottom-left-radius: 1.2rem;
+    text-align: center;
+    line-height: 3rem;
+    background-color: #F2F2F2;
+}
+ input {
+    width: 10rem;
+    padding: 0 0.8rem;
+    border: solid 0.1rem #F2F2F2;
+    border-right:none;
+    font-weight: 700;
+    font-size: 1rem;
+ }
+
+ input:focus, textarea:focus, button {
+     outline: none;
+ }
+
+button {
+    width: 3.3rem;
+    height: 3rem;
+    border-top-right-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+    border: none;
+    text-align: center;
+    line-height: 3rem;
+    background-color: #0065fc;
+    color: white;
+ }
+
+ .searchtext {
+    display: none;
+}
+
+.fa-search {
+    font-display: inherit;
+}
+
+/* --- FILTERS SECTION --- */
+
+ #filters {
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+    height: 16em;
+    padding: 0.5em;
+ }
+
+ #filters h4 {
+     display: block;
+ }
+
+ span.button {
+    width: 45%;
+    margin-right: 1.5em;
+    margin-bottom: 1em;
+    border: solid 0.12rem lightgrey;
+    border-left-style: none;
+    border-radius: 2rem;
+    font-weight: 700;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+ }
+
+span.button i {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1em;
+    padding: 0.5em;
+    border-radius: 14em;
+    background-color: #deebff;
+    text-align: center;
+    line-height: 1rem;
+    color: #0065fc;
+ }
+
+ span.button:hover {
+     width: 45%;
+     border-radius: 2rem;
+     background-color: #deebff;
+     transition: width 3s linear;
+ }
+
+/* --- INFO TEXT --- */
+
+p i {
+    width: 1em;
+    height: 1em;
+    margin-left: 0.3em;
+    margin-right: 0.5em;
+    padding: 0.2em;
+    border: solid 0.12em lightgrey;
+    border-radius: 100%;
+    text-align: center;
+    color: #0065fc;
+ }
+
+ /* --- ACCOMMODATION SECTION --- */
+
+section#accomm {
+    width: 100%;
+    height: auto;
+    margin: 1em auto;
+    display: flex;
+    flex-flow: column-reverse wrap;
+    justify-content: flex-start;
+}
+
+main {
+    width: 100%;
+    padding: 1em;
+    box-sizing: content-box;
+    border-radius: 1em;
+} 
+
+#accomm h3 {
+    margin: 1em 0;
+}
+
+.mainwrapper {
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.hotelcontainer {
+    height: 35%;
+    width: 80%;
+    margin: 1rem 0.5rem;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: 1px 3px 15px 5px lightgrey;
+}
+
+.image {
+    width: 100%;
+    height: 8em; /* WHY DOES IT NOT WORK WITH % ????? */
+    margin-bottom: 0.8em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.hotelcontainer h4, .hotelcontainer p {
+    padding: 0;
+    padding-left: 1em;
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+.hotelcontainer p {
+    font-size: smaller;
+}
+
+/* STAR RATING FOR ALL ACCOMMODATION SECTION */
+
+.star-rating {
+    margin-left: 1em;
+    unicode-bidi:bidi-override;
+    color: lightgray;
+    font-size: 0.8em;
+    height: 1em;
+    width: 5em;
+    position: relative;
+}
+
+.star-rating::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f005\f005\f005\f005\f005";
+}
+
+.star-rating::after {
+    color: #0065fc;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f005\f005\f005\f005\f005";
+    position: absolute;
+    z-index: 1;
+    display: block;
+    left: 0;
+    top: 0;
+    width: attr(rating);
+    overflow: hidden;
+}
+
+[title=".600"]::after {
+    width: 67%;
+}
+
+[title=".800"]::after {
+    width: 90%;
+}
+
+[title=".1000]"]::after {
+    width: 100%;
+}
+
+/* HOTEL IMAGES */
+
+#cannebiere {
+    background: url('https://rhyath.github.io/ReserviaProject/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+}
+        
+#duPort {
+    background: url('https://rhyath.github.io/ReserviaProject/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#mouettes {
+    background: url('https://rhyath.github.io/ReserviaProject/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg') center center no-repeat;
+    background-size: cover; 
+}
+
+#deLaMer {
+    background: url('https://rhyath.github.io/ReserviaProject/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg') center center no-repeat;
+    background-size: cover; 
+}
+
+#laPanier {
+    background: url('https://rhyath.github.io/ReserviaProject/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg') center center no-repeat;
+    background-size: cover; 
+}
+
+#chezAmina {
+    background: url('https://rhyath.github.io/ReserviaProject/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg') center center no-repeat;
+    background-size: cover; 
+}
+
+
+/* END OF MAIN ACCOMMODATION BIT */
+
+aside {
+    width: 90%;
+    height: auto;
+    padding: 1em;
+    background-color: #f2f2f2;
+    box-sizing: content-box;
+    border-radius: 1em;
+}
+
+aside h3, aside i { 
+    display: inline;
+}
+
+#chart {
+    float: right;
+    font-size: 1.5em;
+    color: black;
+}
+
+.clearfix {
+    clear: right;
+}
+
+.asidewrapper {
+    height: auto;
+    margin: 1.5em 0;
+}
+
+.popcontainer {
+    height: 8em;
+    width: 95%;
+    margin: 1em 0;
+    padding: 0.3em;
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: 1px 3px 15px 5px lightgrey;
+}
+
+.popimage {
+    margin: 0;
+    padding: 0;
+    grid-column: 1/2;
+    grid-row: 1/4;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+.popcontainer h4, .popcontainer p {
+    margin: 1em 0 0 1em;
+}
+
+.popcontainer .star-rating {
+    margin-top: 1.3em;
+}
+
+/* ASIDE HOTEL IMAGES */
+
+#morningSun {
+    background: url('https://rhyath.github.io/ReserviaProject/images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#coeurDeLeau {
+    background: url('https://rhyath.github.io/ReserviaProject/images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#bleuBlanc {
+    background: url('https://rhyath.github.io/ReserviaProject/images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+/* ACTIVITIES SECTION  */
+
+section#activ {
+    width: 90%;
+    height: auto;
+    margin: 0.5em 0;
+}
+
+.activwrapper {
+    border-radius: 1em;
+}
+
+.imagebox {
+    border-radius: 1em;
+    box-shadow: 1px 3px 15px 5px #f2f2f2;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imagebox div {
+    height: 8em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.imagebox h4 {
+    padding: 1em;
+    margin: 0;
+}
+
+#oldport {
+    background: url('https://rhyath.github.io/ReserviaProject/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#pomegues {
+    background: url('https://rhyath.github.io/ReserviaProject/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#frioul {
+    background: url('https://rhyath.github.io/ReserviaProject/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#calanques {
+    background: url('https://rhyath.github.io/ReserviaProject/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#garde {
+    background: url('https://rhyath.github.io/ReserviaProject/images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#longchamp {
+    background: url('https://rhyath.github.io/ReserviaProject/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+} 
+
+/* FOOTER SETION */
+
+footer {
+    width: 90%;
+    margin-top: 2em;
+    padding-top: 1em;
+    background-color: #f2f2f2;
+    display: flex; 
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+.infowrap {
+    margin: 1em 2em;
+}
+
+/* MEDIA QUERIES */ 
+
+@media all and (min-width:900px) {
+    nav {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 1em auto 2em;
+        padding: 0 0.3em;
+        width: auto;
+        height: 3.5rem;
+    }
+    
+    li {
+        margin: 0 0 0 3rem;
+    }
+    
+    a:link, a:visited, a:hover, a:active {
+        border-bottom:none;
+    }
+    
+    a.signup {
+        position: initial;
+    }
+    
+    a.signup:hover, a.signup:active {
+        font-style: italic;
+    }
+
+
+button {
+    width: 5rem;
+    height: 3rem;
+    border-top-right-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+    border: none;
+    text-align: center;
+    line-height: 3rem;
+    background-color: #0065fc;
+    color: white;
+ }
+
+.searchtext { 
+    display: inherit;
+    font-family: Raleway;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.fa-search {
+    display: none;
+}
+    
+    #filters {
+        width: 80%;
+        display: flex;
+        flex-direction: row nowrap;
+        justify-content: space-between;
+        justify-items: flex-end;
+        height: auto;
+    }
+
+    #filters h4 {
+     }
+    
+    span.button {
+        width: 42%;
+        margin: 1em;
+        border: solid 0.12rem lightgrey;
+        border-left-style: none;
+        border-radius: 2rem;
+        font-weight: 700;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+     }
+    
+     /* --- ACCOMMODATION SECTION --- */
+    
+    section#accomm {
+        width: auto;
+        height: 40em;
+        margin: 1em 0;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    
+    main {
+        width: 62%;
+        padding: 1em 2em;
+        background-color: #f2f2f2;
+    } 
+    
+    #accomm h3 {
+        margin-top: 1em;
+    }
+    
+    .mainwrapper {
+        height: 80%;
+        margin: 1em 0;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+    }
+    
+    .hotelcontainer {
+        height: 35%;
+        width: 30%;
+        padding: 0.3em;
+        margin-bottom: 0.5em;
+    }
+    
+    .image {
+        width: 100%;
+        height: 55%;
+    }
+    
+    aside {
+        width: 25%;
+        padding: 2em;
+    }
+    
+    .asidewrapper {
+        height: 90%;
+        margin: 1.5em 0;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+    
+    .popcontainer {
+        height: 26%;
+        width: 95%;
+        padding: 0.3em;
+    }
+    
+    /* ACTIVITIES SECTION  */
+    
+    section#activ {
+        width: auto;
+        height: 30em;
+    }
+    
+    .activwrapper {
+        height: 82%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(5,1fr);
+        grid-gap: 2em;
+    }
+    
+    #grid1 {
+        grid-column: 1/2;
+        grid-row: 1/6;
+    }
+    
+    #grid2 {
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+    
+    #grid3 {
+        grid-column: 2/3;
+        grid-row: 4/6;
+    }
+    
+    #grid4 {
+        grid-column: 3/4;
+        grid-row: 1/6;
+    }
+    
+    #grid5 {
+        grid-column: 4/5;
+        grid-row: 1/3;
+    }
+    
+    #grid6 {
+        grid-column: 4/5;
+        grid-row: 3/6;
+    }
+    
+    .imagebox div {
+        height: 90%;
+    }
+    
+    footer {
+        width: 100%;
+        display: flex; 
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+    
+    .infowrap {
+        margin: 3em 4em 0.5em;
+        width: 70%;
+    }
 }
