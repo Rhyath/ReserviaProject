@@ -493,6 +493,12 @@ footer {
 
 /* MEDIA QUERIES */ 
 
+@media all and (min-width:600px) {
+    section#accomm, section#activ, footer {
+        width: 70%;
+        margin-left: 0;
+    }
+
 @media all and (min-width:900px) {
     nav {
         display: flex;
@@ -550,7 +556,7 @@ button {
 }
     
     #filters {
-        width: 80%;
+        width: 100%;
         display: flex;
         flex-direction: row nowrap;
         justify-content: space-between;
@@ -562,14 +568,16 @@ button {
      }
     
     span.button {
-        width: 42%;
+        width: 45%;
+        min-width:fit-content;
         margin: 1em;
+        padding-right: 2em;
         border: solid 0.12rem lightgrey;
         border-left-style: none;
         border-radius: 2rem;
         font-weight: 700;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
         justify-content: flex-start;
         align-items: center;
      }
