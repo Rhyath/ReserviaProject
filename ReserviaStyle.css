@@ -29,7 +29,11 @@ img {
 }
 
 li {
-    display: inline;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: 0;
     list-style: none;
     font-size: 1em;
     color: black;
@@ -42,7 +46,7 @@ li {
 }
 
 .navitem {
-    padding: 0 1em 0.5em;
+    padding: 2em 3em 0.5em;
     border-bottom: solid 0.25em #f2f2f2;
 }
 
@@ -54,7 +58,6 @@ a:link, a:visited {
 
 a:hover, a:active {
     color: #0065fc;
-    text-decoration:overline;
     font-style: italic;
     border-bottom: solid 0.25em #0065fc;
 }
@@ -62,12 +65,12 @@ a:hover, a:active {
 a.signup {
     color: #0065fc;
     font-weight: bolder;
-    text-decoration: overline;
-    border: none;
+    padding-bottom: 0.5em;
 }
 
-a.signup:hover, a.signup:active {
-    font-style: italic;
+#navitem-accom {
+    color: #0065fc;
+    border-bottom: solid 0.25em #0065fc;
 }
 
 /* --- HEADER SECTION --- */
@@ -490,13 +493,19 @@ footer {
 
 /* MEDIA QUERIES */ 
 
+@media all and (min-width:600px) {
+    section#accomm, section#activ, footer {
+        width: 70%;
+        margin-left: 0;
+    }
+
 @media all and (min-width:900px) {
     nav {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        align-items: flex-start;
-        margin: 1em auto 2em;
+        align-items: center;
+        margin: 0 auto 2em;
         padding: 0 0.3em;
         width: auto;
         height: 3.5rem;
@@ -506,17 +515,21 @@ footer {
         margin: 0 0 0 3rem;
     }
     
-    a:link, a:visited, a:hover, a:active {
+    a:link, a:visited {
         border-bottom:none;
+    }
+ 
+    a:hover, a:active,  #navitem-accom {
+        border-bottom:none;
+        border-top: solid 0.25em #0065fc;
     }
     
     a.signup {
         position: initial;
+        text-decoration: none;
+        padding-top: 2em;
     }
     
-    a.signup:hover, a.signup:active {
-        font-style: italic;
-    }
 
 
 button {
@@ -543,7 +556,7 @@ button {
 }
     
     #filters {
-        width: 80%;
+        width: 100%;
         display: flex;
         flex-direction: row nowrap;
         justify-content: space-between;
@@ -555,14 +568,16 @@ button {
      }
     
     span.button {
-        width: 42%;
+        width: 45%;
+        min-width:fit-content;
         margin: 1em;
+        padding-right: 2em;
         border: solid 0.12rem lightgrey;
         border-left-style: none;
         border-radius: 2rem;
         font-weight: 700;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
         justify-content: flex-start;
         align-items: center;
      }
