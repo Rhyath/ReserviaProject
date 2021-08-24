@@ -16,16 +16,21 @@ h4 {
 /* --- PAGE TOP SECTION --- */
 
 nav {
-    margin: 2em;
+    margin: 2em auto;
     padding-top: 0.3em;
     width: auto;
     height: auto;
 }
 
 img {
+    margin-left: 0.5em;
     width: 6.9rem;
     height: 3.2rem;
     background-color: rgba(0,102,252,0);
+}
+
+ul {
+    padding-left: 0.3em;
 }
 
 li {
@@ -34,38 +39,44 @@ li {
     flex-wrap: nowrap;
     justify-content: space-evenly;
     margin: 0;
+    padding: 0;
+    width: 49%;
     list-style: none;
     font-size: 1em;
-    color: black;
-}
-
-.signup {
-    position: absolute;
-    top: 3.5em;
-    font-weight: bolder;
-}
-
-.navitem {
-    padding: 0.5em;
     border-bottom: solid 0.25em #f2f2f2;
-}
-
-a:link, a:visited {
-    text-decoration: none;
     color: black;
-    /* cursor: pointer; --maybe not really needed! */
 }
 
-a:hover, a:active {
+
+li:hover, li:active {
     color: #0065fc;
     font-style: italic;
     border-bottom: solid 0.25em #0065fc;
 }
 
+a:link {
+    text-decoration: none;
+}
+
+a:visited{
+    color: inherit;
+}
+
 a.signup {
-    color: #0065fc;
-    font-weight: bolder;
+    float: right;
+    position: relative;
+    top: -5.8rem;
+    margin-top: 1rem;
+    margin-right: 0.5em;
     padding-bottom: 0.5em;
+    font-weight: bolder;
+    color: #0065fc;
+}
+
+a.signup:hover {
+    font-style: italic;
+    color: #0065fc;
+    border-bottom: solid 0.25em #0065fc;
 }
 
 #navitem-accom {
@@ -552,8 +563,8 @@ footer {
     }
 
     nav {
-        display: flex;
-        flex-flow: row nowrap;
+        display: inline-flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         margin: 0 auto 2em;
@@ -564,26 +575,34 @@ footer {
 
     img {
         position: relative;
-        top: -0.01em;
+        top: -0.1em;
+        flex: 1 1 0;
     }
-    
+
+    a.signup {
+        padding: 1.1em 0;
+        position: relative;
+        top: -0.6em;
+        flex: 1 1 0;
+        min-width:max-content;
+    }
+
+    ul {
+        flex: 20 1 0;
+        text-align: right;
+        margin-right: 0.5rem;
+    }
+
     li {
-        margin: 0 0 0 3rem;
+       width: auto;
+       padding: 1rem 0.5rem;
+       border-bottom:none;
     }
     
-    a:link, a:visited {
-        border-bottom:none;
-    }
  
-    a:hover, a:active,  #navitem-accom {
+    li:hover, li:active, a.signup:hover, #navitem-accom {
         border-bottom:none;
         border-top: solid 0.25em #0065fc;
-    }
-    
-    a.signup {
-        position: initial;
-        text-decoration: none;
-        padding-top: 0.5em;
     }
     
     header {
