@@ -1,4 +1,0 @@
-Version1 is my working branch for the Reservia project.
-
-Any amendments to be actioned from mentor feedback will go on a different branch with version2 in the future.
-
