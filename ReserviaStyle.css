@@ -510,6 +510,10 @@ footer {
     justify-content: flex-start;
 }
 
+footer a {
+    color: black;
+}
+
 .infowrap {
     margin: 1em 2em;
 }
