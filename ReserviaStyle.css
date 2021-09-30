@@ -227,7 +227,7 @@ section#accomm {
     justify-content: flex-start;
 }
 
-main {
+#accomm >:first-child {
     width: 100%;
     padding: 1em;
     box-sizing: content-box;
@@ -547,7 +547,7 @@ footer a {
         margin: 0 auto 1rem;
     }
 
-    aside, main, section#activ, footer {
+    aside, #accomm >:first-child, section#activ, footer {
         width: 70%;
         margin: 0 auto;
     }
@@ -680,7 +680,7 @@ footer a {
         justify-content: space-between;
     }
     
-    main {
+    #accomm >:first-child {
         width: 62%;
         padding: 1em 2em;
         background-color: #f2f2f2;
